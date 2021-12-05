@@ -13,7 +13,7 @@ class App extends React.Component {
             .then(res => this.setState({ apiResponse: res }))
             .catch(err => err);
     }
-    componentDidMount() {
+    componentWillMount() {
         this.callAPI();
     }
   render() {

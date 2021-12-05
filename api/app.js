@@ -40,4 +40,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+var testDBRouter = require("./routes/testDB");
+app.use("/testDB", testDBRouter);
+
 module.exports = app;
